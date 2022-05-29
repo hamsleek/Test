@@ -9,6 +9,47 @@ def print_hi(name):
     print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
 
 
+# 比较两个数字的大小
+def compare(a, b):
+    if a > b:
+        return 1
+    elif a == b:
+        return 0
+    else:
+        return -1
+
+
+# 比较两个字符串的大小
+def compare_str(a, b):
+    if a > b:
+        return 1
+    elif a == b:
+        return 0
+    else:
+        return -1
+
+
+# 创建一个学生对象
+class Student:
+    def __init__(self, name, age, score):
+        self.name = name
+        self.age = age
+        self.score = score
+
+    def print_info(self):
+        print(f'{self.name} is {self.age} years old and has score {self.score}')
+
+    # 提取一个列表中的偶数，并返回一个新列表
+
+
+def extract_even(numbers):
+    even_numbers = []
+    for number in numbers:
+        if number % 2 == 0:
+            even_numbers.append(number)
+    return even_numbers
+
+
 # 按间距中的绿色按钮以运行脚本。
 if __name__ == '__main__':
     print_hi('PyCharm')
